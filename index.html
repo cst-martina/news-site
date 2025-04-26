@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Giornale Online</title>
+  <meta name="description" content="Ultime notizie su politica, sport, economia e cultura.">
+  <meta name="keywords" content="notizie, politica, sport, economia, cultura, giornale, news">
+  <meta name="author" content="Il Giornale Online">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+  <div class="top-bar">
+    <div class="logo">Il Giornale Online</div>
+    <div class="date-time" id="dateTime"></div>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Politica</a></li>
+      <li><a href="#">Economia</a></li>
+      <li><a href="#">Sport</a></li>
+      <li><a href="#">Cultura</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="breaking-news">
+  <marquee behavior="scroll" direction="left">🚨 Breaking: Ultim'ora politica, elezioni anticipate a ottobre! 🚨</marquee>
+</div>
+
+<div class="search-bar container">
+  <input type="text" id="searchInput" placeholder="Cerca articoli..." onkeyup="searchArticles()">
+</div>
+
+<main class="container main-grid">
+  <section class="featured-article" id="featuredArticle"></section>
+
+  <section class="content-and-sidebar">
+    <div class="articles" id="articles"></div>
+    <aside class="sidebar">
+      <h3>Ultimi Articoli</h3>
+      <ul id="latestArticles"></ul>
+      <h3>Categorie</h3>
+      <ul>
+        <li>Politica</li>
+        <li>Sport</li>
+        <li>Cultura</li>
+        <li>Economia</li>
+      </ul>
+      <div class="ad">
+        <img src="https://via.placeholder.com/250x250?text=Pubblicit%C3%A0" alt="Pubblicità">
+      </div>
+    </aside>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Il Giornale Online - Tutti i diritti riservati.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
